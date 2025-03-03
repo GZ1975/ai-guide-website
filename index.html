@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדריך כלי בינה מלאכותית - משודרג</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --accent-color: #ff6f61;
+            --background-color: #f8f9fa;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --header-color: #343a40;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: var(--header-color);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .category {
+            margin-bottom: 3rem;
+            background-color: var(--card-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .category img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .blog-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: var(--card-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: var(--header-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>מדריך כלי בינה מלאכותית</h1>
+    </header>
+    
+    <nav>
+        <a href="#text-tools">כלי טקסט</a>
+        <a href="#image-tools">יצירת תמונות</a>
+        <a href="#video-tools">יצירת סרטונים</a>
+        <a href="#story-tools">יצירת סיפורים</a>
+        <a href="#animation-tools">יצירת אנימציות</a>
+        <a href="#presentation-tools">יצירת מצגות</a>
+        <a href="#games-tools">משחקים</a>
+        <a href="#blog">בלוג</a>
+    </nav>
+    
+    <div class="container">
+        <div class="category" id="text-tools">
+            <h2>כלי טקסט</h2>
+            <p>כלי AI לשיפור כתיבה, תרגום ויצירת תוכן מקצועי.</p>
+        </div>
+        
+        <div class="category" id="image-tools">
+            <h2>יצירת תמונות</h2>
+            <p>כלים ליצירת תמונות ואיורים באמצעות בינה מלאכותית.</p>
+        </div>
+        
+        <div class="category" id="video-tools">
+            <h2>יצירת סרטונים</h2>
+            <p>כלי עריכה ויצירת וידאו מבוססי AI.</p>
+        </div>
+        
+        <div class="blog-section" id="blog">
+            <h2>בלוג - חדשות AI</h2>
+            <p>עדכונים חמים על עולם הבינה המלאכותית.</p>
+            <ul>
+                <li><a href="#">הכירו את GPT-5: מהפכת השפה הבאה</a></li>
+                <li><a href="#">איך Midjourney ו-DALL·E משנים את עולם העיצוב?</a></li>
+                <li><a href="#">10 כלים מבוססי AI שצריך להכיר ב-2025</a></li>
+                <li><a href="#">השפעת AI על שוק העבודה - תובנות עדכניות</a></li>
+                <li><a href="#">AI בעולם הקולנוע: כיצד טכנולוגיות חדשות משנות את התעשייה</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 גיא צבר | כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
