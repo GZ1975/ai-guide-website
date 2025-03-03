@@ -29,22 +29,27 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 0.7rem 1.5rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     font-weight: bold;
     font-size: 1.2rem;
     transition: all 0.3s ease;
     border-radius: 5px;
+    background: #007bff;
 }
 
 nav a:hover {
-    background-color: #007bff;
-    color: white;
+    background-color: #00c6ff;
+    color: #161b22;
 }
 
 .container {
@@ -68,6 +73,8 @@ nav a:hover {
     height: auto !important;
     min-height: 400px !important;
     padding: 2rem !important;
+    border-left: 5px solid #00c6ff;
+    border-right: 5px solid #00c6ff;
 }
 
 .category:hover {
@@ -79,6 +86,7 @@ nav a:hover {
     color: #00c6ff;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-size: 1.8rem;
 }
 
 .category p {
@@ -93,6 +101,7 @@ footer {
     text-align: center;
     font-size: 1rem;
     margin-top: 3rem;
+    border-top: 3px solid #00c6ff;
 }
 
 @keyframes fadeInUp {
@@ -107,9 +116,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
     nav a {
-        display: block;
-        margin: 0.5rem 0;
+        width: 80%;
+        text-align: center;
     }
     .container {
         padding: 1rem;
