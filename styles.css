@@ -4,11 +4,12 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0d1117;
+    color: #ffffff;
     text-align: right;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -16,14 +17,18 @@ header {
     color: white;
     text-align: center;
     padding: 2rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav {
-    background-color: #222;
+    background-color: #161b22;
     padding: 1rem;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -50,36 +55,52 @@ nav a:hover {
 
 .category {
     margin-bottom: 3rem;
-    background-color: white;
+    background-color: #1f2937;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .category:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .category h2 {
-    color: #007bff;
+    color: #00c6ff;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .category p {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #ddd;
 }
 
 footer {
-    background-color: #222;
+    background-color: #161b22;
     color: white;
     padding: 2rem;
     text-align: center;
     font-size: 1rem;
     margin-top: 3rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
