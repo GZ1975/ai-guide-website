@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברוכים הבאים למדריך כלי בינה מלאכותית</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --accent-color: #9b59b6;
+            --background-color: #f8f9fa;
+            --dark-background: #2c3e50;
+            --dark-text: #ecf0f1;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --header-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+        
+        header {
+            background: url('https://source.unsplash.com/1600x900/?ai,technology,future') center/cover no-repeat;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        header p {
+            font-size: 1.7rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: var(--secondary-color);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .feature-card {
+            background-color: var(--card-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: var(--card-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog h2 {
+            text-align: center;
+            color: var(--primary-color);
+        }
+        
+        .blog-post {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .blog-post h3 {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--header-color);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ברוכים הבאים למדריך כלי בינה מלאכותית</h1>
+        <p>המרכז המקיף לכלי בינה מלאכותית – גלו כלים מתקדמים, קראו תכנים מעמיקים, ושחקו במשחקים אינטראקטיביים מבוססי AI.</p>
+        <a href="#explore" class="cta-button">🚀 גלו עוד</a>
+    </header>
+    
+    <section class="features" id="explore">
+        <div class="feature-card">
+            <h3>🔍 חקרו כלים</h3>
+            <p>רשימת כלי AI מתקדמים לפי קטגוריות – עריכת תמונות, כתיבה חכמה, יצירת וידאו ועוד.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📖 בלוג מקצועי</h3>
+            <p>כתבות, מדריכים ועדכונים על חידושי בינה מלאכותית, טרנדים ואפליקציות חדשות.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎮 משחקים חכמים</h3>
+            <p>משחקים אינטראקטיביים מבוססי AI – אתגרו את עצמכם עם חידות, מבוכים ועוד!</p>
+        </div>
+    </section>
+    
+    <section class="blog">
+        <h2>📢 חדשות ועדכונים</h2>
+        <div class="blog-post">
+            <h3>🧠 איך ChatGPT משנה את העולם?</h3>
+            <p>סקירה מעמיקה על השפעת ChatGPT בתחומים שונים – חינוך, תעשייה וטכנולוגיה.</p>
+        </div>
+        <div class="blog-post">
+            <h3>🎨 יצירת תמונות עם DALL·E</h3>
+            <p>איך להשתמש ב-DALL·E ליצירת אומנות מדהימה מבוססת בינה מלאכותית?</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>האתר נבנה על ידי גיא צבר</p>
+    </footer>
+</body>
+</html>
